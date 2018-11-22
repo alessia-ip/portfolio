@@ -12,6 +12,10 @@
 -------------------------------------------------------------------------------*/
 
 @import url(//fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@font-face {
+font-family: "Cutive Mono";
+src: url("Cutive_Mono/CutiveMono-Regular.ttf");
+}
 p {
 	font-size: 14px;
 	line-height: 22.4px;
