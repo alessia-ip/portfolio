@@ -5,4 +5,5 @@
    hard_wrap: false
  future: true
  jailed: false
+ theme: none
  gfm_quirks: paragraph_end
