@@ -17,9 +17,9 @@ font-family: "Cutive Mono";
 src: url("Cutive_Mono/CutiveMono-Regular.ttf");
 }
 p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 22.4px;
-	color: #6c7279;
+	color: #404244;
 }
 h1 {
 	font-size: 65px;
