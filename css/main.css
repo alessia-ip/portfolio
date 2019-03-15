@@ -86,11 +86,13 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 	color: #6c7279;
+	margin-left: 25px;
 }
 ul li {
 	list-style: none;
 	color: #6c7279;
 }
+
 .section {
 	padding: 50px 0;
 }
@@ -448,3 +450,28 @@ blockquote::before{
 	font-size: 25px;
 	color: darkgray;
 }
+
+cite{
+	color: darkgray !important;
+}
+
+cite::before{
+	content: " – ";
+}
+
+li{
+	color:  inherit !important;
+	font-size:  inherit;
+}
+
+ol{
+	color:  black;
+	font-size:  16px;
+}
+
+ul{
+	color:  black;
+	font-size: 16px;
+}
+
+
