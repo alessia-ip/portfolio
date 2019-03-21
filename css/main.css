@@ -67,10 +67,12 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #e84545 ;
+	font-size: 16px;
+	color: #00cc2f ;
+	font-weight: bold;
 }
 a:hover, a:focus {
-	color: #e84545 ;
+	color: #e000c2;
 	text-decoration: none;
 	-moz-transition: background-color, color, 0.3s;
 	-o-transition: background-color, color, 0.3s;
@@ -399,7 +401,7 @@ ul li {
 .footer {
 	text-align: left;
 	background-color: #333;
-	padding: 7%;
+	padding: 30px;
 }
 .footer h4 {
 	color: #fff;
@@ -468,10 +470,4 @@ ol{
 	color:  black;
 	font-size:  16px;
 }
-
-ul{
-	color:  black;
-	font-size: 16px;
-}
-
 
