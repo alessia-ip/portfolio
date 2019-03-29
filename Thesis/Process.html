@@ -79,21 +79,21 @@
 							<li><a href="../Thesis.html" style="padding:0px;margin:0px;"><span style='font-family:"Bitwise";'>Novum</span> : Home</a></li>
 						</ul>
 						<ul>
-							<li><a href="#Context" style="padding:0px;margin:0px;">Context</a></li>
+							<li><a href="../Thesis/Context.html" style="padding:0px;margin:0px;">Context</a></li>
 						</ul>
 						<ul>
 							<li><a href="../Thesis/Process.html" style="padding:0px;margin:0px;">Process</a></li>
 						</ul>
 						<ul>
-							<li><a href="#Final" style="padding:0px;margin:0px;"><span style='font-family:"Bitwise";'>Novum</span> : The Experience
+							<li><a href="../Thesis/ExperienceNovum.html" style="padding:0px;margin:0px;"><span style='font-family:"Bitwise";'>Novum</span> : The Experience
 								</a></li>
 
 						</ul>
 						<ul>
-							<li><a href="#" style="padding:0px;margin:0px;">Further Developments</a></li>
+							<li><a href="../Thesis/FurtherDevelopments.html" style="padding:0px;margin:0px;">Further Developments</a></li>
 						</ul>
 						<ul>
-							<li><a href="#Final" style="padding:0px;margin:0px;">Your Proctor
+							<li><a href="../AboutMe.html" style="padding:0px;margin:0px;">About Me
 								</a></li>
 
 						</ul>
@@ -116,7 +116,7 @@
 			<div class="row" style="visibility: hidden;">
 				<div class="col-md-12 hero">
 					<div class="hero-content">
-<p></p>
+						<p></p>
 						<br>
 
 					</div>
@@ -144,6 +144,9 @@
 					<li class="nav-item">
 						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Prop and Setup Fabrication</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="digital-tab" data-toggle="tab" href="#digital" role="tab" aria-controls="contact" aria-selected="false">Digital Artifacts</a>
+					</li>
 				</ul>
 			</div>
 			<div class="row" style="margin-top:0px;">
@@ -151,7 +154,7 @@
 					<div class="tab-content" id="myTabContent">
 						<div class="tab-pane fade active in" id="process" role="tabpanel" aria-labelledby="process-tab">
 							<h3>Process Summary</h3>
-							<p>My process work is broken out into three main sections for this project:</p>
+							<p>My process work is broken out into four main sections for this project:</p>
 							<ol>
 								<li>The <b>storytelling</b>, which is comprised of: <ul>
 										<li>The book I based this off of,</li>
@@ -165,10 +168,15 @@
 										<li>And a brief coding overview.</li>
 									</ul>
 								</li>
-								<li>And the <b>prop and setup fabrication</b>, which encompasses:<ul>
-										<li>Physical protoyping,</li>
-										<li>Material useage,</li>
+								<li>The <b>prop and setup fabrication</b>, which encompasses:<ul>
+										<li>Physical prototyping,</li>
+										<li>Material usage,</li>
 										<li>And participant interaction.</li>
+									</ul>
+								</li>
+								<li>And the <b>digital artifacts</b>, which is comprised of: <ul>
+										<li>3d modelling components, and,</li>
+										<li>Auditory work.</li>
 									</ul>
 								</li>
 							</ol>
@@ -251,18 +259,7 @@
 										<div class="col-md-3">
 											<br>
 											<p>Version two of <span style='font-family:"Bitwise";'>Novum</span>'s experience flow focused more on the technical side of <span style='font-family:"Bitwise";'>Novum</span>. This include how the devices would interact with one another, and what setup was required for this to work. At this point in time, I was still utilizing Unity's built in server functionality and relying on a third server host (a Mac computer that would host the LAN) to manage the experience.</p>
-											<p>While this setup would work in theory, poor documentation on the Unity server manager made it difficult to implement in a way that was both functional and efficient. </p>
-										</div>
-									</div>
-									<div class="row">
-										<h3>Version Three</h3>
-
-										<div class="col-md-8 work detail" style="padding: 0px; margin: 0px;">
-
-										</div>
-
-										<div class="col-md-4">
-											<p></p>
+											<p>While this setup would work in theory, poor documentation on the Unity server manager made it difficult to implement in a way that was both functional and efficient. This was ultimately the reason I moved to PubNub in the end as a backend for the experience. </p>
 										</div>
 									</div>
 							</div>
@@ -276,15 +273,6 @@
 											<div class="col-md-6" style="padding-left: 0px;">
 												<h4>Version One</h4>
 												<p>Version one of physical fabrications was kept exceptionally simple for testing purposes. Paper only targets were used by themselves as easy to replace image targets.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6" style="padding-left: 0px;">
-												<h4>Image Creation</h4>
-												<p> </p>
-											</div>
-											<div class="col-md-6">
-
 											</div>
 										</div>
 										<div class="row">
@@ -321,44 +309,67 @@
 
 							</div>
 						</div>
+
+
+						<div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab">
+							<div class="row col-md-12">
+								<h2> Digital Artifacts </h1>
+									<div class="row">
+										<h3>3d Models</h3>
+										<div class="col-md-6">
+											<p>All 3D work was kept to a low-poly style of 3D models. Minimizing the number of polygons was crucial in ensuring the application would still run smoothly on a mobile device, and this not disrupt the participant’s experience with lag or latency. The second reason for creating simplistic models,was due to the smaller screen real-estate visible on a mobile phone. The models themselves needed to be simplistic and easy to recognize at a glance with the smaller screen size. </p>
+
+										</div>
+										<div class="col-md-6 work-detail">
+
+
+											<img src="../myImages/Thesis/Alienhead.png" width="100%" />
+
+
+										</div>
+									</div>
+
+									<div class="row">
+
+										<div class="col-md-8">
+											<img src="../myImages/Thesis/Greenhouse.png" width="100%" />
+
+										</div>
+										<div class="col-md-4 work-detail">
+
+
+											<img src="../myImages/Thesis/Person.png" width="100%" />
+
+
+										</div>
+									</div>
+									<div class="row">
+										<h3>Audio</h3>
+										<div class="col-md-6">
+											<p>To keep with the theme, it made sense to have a distant, uncaring, and uncanny valley sounding voice to use. Thus, for the voiceover of <span style='font-family:"Bitwise";'>Novum</span>, the IBM Watson text-to-speech was used to turn written dialogue into voiced-over lines. </p>
+
+										</div>
+										<div class="col-md-6">
+											<p>This is one of the voice lines near the beginning of the play experience: </p>
+											<audio controls src="../OtherFiles/IntroductionInstructions.mp3">
+												Your browser does not support the
+												<code>audio</code> element.
+											</audio>
+
+
+
+										</div>
+									</div>
+							</div>
+
+						</div>
+
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-	<footer class="footer">
-		<div class="container">
-			<div class="col-md-6 left">
-				<h4>Imagine the future!</h4>
-			</div>
-			<div class="col-md-6 right">
-				<div class="col-md-6 right">
-					<a href="https://www.instagram.com/alessia.ip/"><img src="../myImages/Icons/GlyphLogo_May2016_Onlinev2/glyph-logo_May2016-01.png" style="width:25px;float:left; padding:5px;" />
-						<p style="left-padding:5px;">alessia.ip</p>
-					</a>
-				</div>
-				<div class="col-md-6 right">
-					<a href="https://www.linkedin.com/in/alessia-ianni-palarchio/"><img src="../myImages/Icons/In-White-128px-TM.png" style="width:25px;float:left; padding:5px;" />
-						<p style="left-padding:5px;">Alessia Ianni-Palarchio</p>
-					</a>
-				</div>
-				<div class="col-md-6 right">
-					<a href="https://twitter.com/AlessiaIP"><img src="../myImages/Icons/Twitter_Logo_Blue.png" style="width:25px;float:left; padding:5px;" />
-						<p style="left-padding:5px;">@AlessiaIP</p>
-					</a>
-				</div>
-				<div class="col-md-6 right">
-					<a href="http://alessia-ip.tumblr.com/"><img src="../myImages/Icons/Tumblr_Logos_ATTEMPTWhite.png" style="width:25px;float:left; padding:5px;" />
-						<p style="left-margin:10px;">alessia-ip</p>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- footer section -->
 
 	<!-- JS FILES -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
