@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Gaegu', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400 !important;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400 !important;
+}
+
+
+p{
+  font-family: Solway, serif;
+  font-size: 14px;
+}
+
+.row{
+  justify-content: space-around !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col{
+  /* outline-style: dotted;
+  outline-color: black; */
+  padding-left:  20px;
+  padding-right: 20px;
+
+}
+
+body{
+  background-color: #EDB64B;
+}
+
+header{
+  background-color: #3B3743;
+}
+
+.portfolio-row {
+  background-color: #F5F8F0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.highlight{
+  background-color: #E07E8B !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+.highlight:hover{
+  background-color: #3B3743 !important;
+  color: #FFFFFF !important;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: inherit;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.portImg{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.belowImg{
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.purpleTxt{
+  color: #C14A80;
+}
+
+.noHighlightLink{
+  transition: 0.3s;
+}
+
+.noHighlightLink:hover{
+  color: #C14A80;
+}
+
+.hoverImg{
+  transition: 0.3s;
+  border: 2px rgba(193,	74,	128, 0) dashed;
+}
+
+.hoverImg:hover{
+  opacity: 0.9;
+  border: 2px rgba(193,	74,	128, 1) dashed;
+}
+
+/* https://paulund.co.uk/css-animation-link-underline */
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #C14A80;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  body {
+    margin-left: 20px;
+  }
+
+  .portfolio-row{
+   margin-bottom: 20px;
+  }
+}
