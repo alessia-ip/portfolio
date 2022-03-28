@@ -5,6 +5,33 @@
 
   <link href="CSS/dialogueStyleSheet.css" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+  <script>
+    function portfolioOn() {
+      console.log("portfolio");
+      document.getElementById("portfolio").style.visibility = "visible";
+    }
+
+    function writingOn() {
+      document.getElementById("portfolio").style.visibility = "hidden";
+    }
+
+    function aboutOn() {
+      document.getElementById("portfolio").style.visibility = "hidden";
+    }
+
+    function contaxtOn() {
+      document.getElementById("portfolio").style.visibility = "hidden";
+    }
+  </script>
+
+
+  <!--buttons https://codepen.io/shawnlooi/pen/eeXmrQ -->
 
 </head>
 
@@ -12,68 +39,298 @@
 
   <!--Web Version-->
 
+
   <div class="container">
-    <!--Top box with stuff about me-->
-    <div style="width:95vw; padding-left: 2vw; padding-right: 2vw;  position: relative;">
-      <div style="width:25vw; overflow: visible; height:1vh; position: absolute; top: 0px; right:0px;"><img src="SelfPortrait.png" style="max-width:25vw; max-height: 45vh ;position: relative; top: 0px; right:0px;"></div>
-      <div>
-        <h1>Alessia</h1>
+
+    <!---LEFT SIDEBAR --->
+    <div style="width:30vw; float: left; padding-left: 2vw; padding-right: 2vw;">
+      <!--Top box with stuff about me-->
+      <br>
+      <br>
+      <div style="width:30vw; padding-left: 2vw; padding-right: 2vw;  position: relative;">
+        <div style="width:8vw; overflow: visible; height:1vh; position: absolute; top: 0px; right:0px;"><img src="SelfPortrait.png" style="max-width:15vw; max-height: 35vh ;position: relative; top: 0px; right:0px;"></div>
+        <div>
+          <p style="font-family: 'Averia Serif Libre', sans-serif; font-size:60px; margin: 0px; position: relative; bottom: 0px; color: #AFAFDC;">Alessia</p>
+        </div>
+        <div class="bg-purple" style="width:35vw; height:30vh; border-radius: 10px;">
+
+          <div style="margin-left:30px; width:20vw; text-align: justify; position: relative; top: 50%; transform: translateY(-50%); font-size: 28px; line-height: 150%;">
+            <p>“Hey there! I’m a game designer and developer from Toronto, Canada! What can I help you with today?”</p>
+          </div>
+
+
+        </div>
       </div>
-      <div class="bg-yellow" style="width:95vw; height:45vh; border-radius: 10px;">
-        <div style="margin:15px; padding:10px; width:60vw; text-align: justify; display: inline-block; position: absolute; max-height:45vh; font-size: 24px; ">
-          <p>“Hey there! I’m a game designer and developer from Toronto, Canada!”</p>
-          <p>“I’ve got a passion for making digital games that tell a story, and I’m always considering new ways to facilitate that storytelling. Whether it be a new mechanic, a robust dialogue system, level design supporting the intruige of a world,
-            or the user interface and experience, I thrive in combining design and technical skills to make interesting and memorable experiences.”</p>
-          <p>“What can I help you with today?”</p>
+      <br>
+      <br>
+      <!--Input Buttons-->
+      <div style="width:30vw; padding-left: 2vw; padding-right: 2vw">
+
+        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+          <a class='animated-arrow' href="#" onclick="portfolioOn()">
+            <span class='the-arrow -left'>
+              <span class='shaft'></span>
+            </span>
+            <span class='main'>
+              <span class='text'>
+                <p>1) “Can you show me your projects?”</p>
+              </span>
+            </span>
+          </a>
+        </div>
+        <br>
+        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+          <a class='animated-arrow' href="#" onclick="writingOn()">
+            <span class='the-arrow -left'>
+              <span class='shaft'></span>
+            </span>
+            <span class='main'>
+              <span class='text'>
+                <p>2) “Do you have any writing I could read?” </p>
+              </span>
+            </span>
+          </a>
+        </div>
+        <br>
+        <div class="bg-pink " style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+          <a class='animated-arrow' href='#'>
+            <span class='the-arrow -left'>
+              <span class='shaft'></span>
+            </span>
+            <span class='main'>
+              <span class='text'>
+                <p>3) “Tell me a bit about yourself.”</p>
+              </span>
+            </span>
+          </a>
+        </div>
+        <br>
+        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+          <a class='animated-arrow' href='#'>
+            <span class='the-arrow -left'>
+              <span class='shaft'></span>
+            </span>
+            <span class='main'>
+              <span class='text'>
+                <p>4) “How can we stay in touch?”</p>
+              </span>
+            </span>
+          </a>
         </div>
 
       </div>
     </div>
-    <br>
-    <!--Input Buttons-->
-    <div style="width:95vw; padding-left: 2vw; padding-right: 2vw">
 
-      <div class="bg-purple" style="width:93vw; padding-left: 1vw; padding-right: 1vw">
-        <a class='animated-arrow' href='#'>
-          <span class='the-arrow -left'>
-            <span class='shaft'></span>
-          </span>
-          <span class='main'>
-            <span class='text'>
-              <p>1) “Let’s see what quests you’ve been up to.” &lt;Open project records&gt; </p>
-            </span>
-          </span>
-        </a>
-      </div>
+    <!---RIGHT SIDEBAR --->
+    <div style="width:50vw; float: right; padding-left: 2vw; padding-right: 2vw; background-color: white; height: 100vh; overflow: hidden; ">
       <br>
-      <div class="bg-purple " style="width:93vw; padding-left: 1vw; padding-right: 1vw">
-        <a class='animated-arrow' href='#'>
-          <span class='the-arrow -left'>
-            <span class='shaft'></span>
-          </span>
-          <span class='main'>
-            <span class='text'>
-              <p>2) “I think I want to get to know you a bit better.”</p>
-            </span>
-          </span>
-        </a>
-      </div>
       <br>
-      <div class="bg-purple" style="width:93vw; padding-left: 1vw; padding-right: 1vw">
-        <a class='animated-arrow' href='#'>
-          <span class='the-arrow -left'>
-            <span class='shaft'></span>
-          </span>
-          <span class='main'>
-            <span class='text'>
-              <p>3) “How can we stay in touch?”</p>
-            </span>
-          </span>
-        </a>
+
+
+      <!---PORTFOLIO PIECES--->
+      <div style="overflow: scroll; max-height: 100vh" id="portfolio">
+
+        <!---Piece One--->
+        <div style="width:50vw; min-height:32vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%">
+                <span style="font-size: 21px">
+                  <img src="images/covers/AwardIcon.png" style="max-height:1em; display:inline-block;position:relative; bottom:-5px;" /> Fangs and Friends
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <a href="https://fangs-and-friends.itch.io/fangs-and-friends" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Image-->
+          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/FangsAndFriends.png" style="max-height:100%;" />
+          </div>
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
+            <p style="width:34vw">A co-op, environmental puzzle game. Two unlikely allies, a vampire, and a mage, must work together to escape their imprisonment.</p>
+            <p style="width:34vw">
+              <i>Fangs and Friends</i> is a puzzle game focused on asynchronous gameplay in environmental manipulation. It won Best Overall Game, Disctinction in Game Art and the 2nd place People’s Choice Award at the <a
+                href="https://www2.ocadu.ca/news/ocad-u-and-u-of-t-students-team-up-to-win-prizes-at-level-up-2019" class="inTextLinkHover" target="_blank">2019 Level Up Showcase.</a>
+            </p>
+            <p style="width:34vw"><i>My roles: Producer, Level Designer, Narrative Technical Designer</i></p>
+            </p>
+          </div>
+        </div>
+        <!---Piece One End--->
+
+        <br>
+        <hr>
+        <br>
+
+        <!---Piece Two--->
+        <div style="width:50vw; min-height:32vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  Derelict Spire
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <a href="https://alessiaip.itch.io/derelict-spire" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Image-->
+          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/DerelictSpire.png" style="max-height:100%;" />
+          </div>
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
+            <p style="width:34vw">A single player exploration game set in a secluded, abandoned port village.</p>
+            <p style="width:34vw">
+              This level was created as a vertical slice that demonstrated a grappling hook mechanic, and focused on environmental storytelling. The landscape is heavily inspired by the village of Tropea, Calabria, in Italy.
+            </p>
+            <p style="width:34vw"><i>My roles: Level Designer, Programmer</i></p>
+            </p>
+          </div>
+        </div>
+        <!---Piece Two End--->
+
+        <br>
+        <hr>
+        <br>
+
+        <!---Piece Three--->
+        <div style="width:50vw; min-height:32vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  Eggsistential
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <a href="https://alessiaip.itch.io/eggsistential" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Image-->
+          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/Eggsistential.png" style="max-height:100%;" />
+          </div>
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
+            <p style="width:34vw">A soft-boiled, noir investigative game about an egg, some birds, and one big question.</p>
+            <p style="width:34vw">
+               <i>Eggsistential</i> is a short walking-sim that borrows from the noir visual aesthetic to set the tone for our protagonist as they explore their town.
+            </p>
+            <p style="width:34vw"><i>My roles: Programmer, Technical Narrative Designer, Level Design</i></p>
+            </p>
+          </div>
+        </div>
+        <!---Piece Three End--->
+
+        <br>
+        <hr>
+        <br>
+
+        <!---Piece Four--->
+        <div style="width:50vw; min-height:32vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  Kindred Souls
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <a href="https://alessiaip.itch.io/kindred-souls" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Image-->
+          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/Kindred Souls.png" style="max-height:100%;" />
+          </div>
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
+            <p style="width:34vw">A short visual novel about distance relationships, and human connection. </p>
+            <p style="width:34vw">
+              <i>Kindred Souls</i> is  
+            </p>
+            <p style="width:34vw"><i>My roles: Programmer, Technical Narrative Designer, Level Design</i></p>
+            </p>
+          </div>
+        </div>
+        <!---Piece Four End--->
+
+        <br>
+        <br>
+        <br>
+
+      </div>
+
+      <!---WritingSamples--->
+      <div>
+
+
+
+
+      </div>
+
+
+      <!---About Me--->
+      <div>
+
+
+
+
+      </div>
+
+      <!---Contact--->
+      <div>
+
+
+
+
       </div>
 
     </div>
-
   </div>
 
   <!-- ☞
@@ -87,6 +344,8 @@
       </span>
     </span>
   </a> -->
+
+
 
 </body>
 
