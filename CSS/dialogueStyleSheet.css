@@ -37,7 +37,7 @@ p{
 
 .hover-button{
   background-color:#FFCD5F;
-  color:#B5446E;
+  color:#000000;
   transition: 0.2s;
 }
 
@@ -149,7 +149,7 @@ ul li {
 
 .animated-arrow {
   display: inline-block;
-  color: #4c4c4c;
+  color: #000000;
   font-size: 1.25em;
   font-style: italic;
   text-decoration: none;
@@ -160,13 +160,13 @@ ul li {
 .bg-pink:hover>.animated-arrow>.the-arrow.-left>.shaft {
   width: 64px;
   transition-delay: 0.1s;
-  background-color: #808080;
+  background-color: #000000;
 }
 
 .bg-pink:hover>.animated-arrow>.the-arrow.-left>.shaft:before, .animated-arrow:hover>.the-arrow.-left>.shaft:after {
   width: 8px;
   transition-delay: 0.1s;
-  background-color: #808080;
+  background-color: #000000;
 }
 
 .bg-pink:hover>.animated-arrow>.the-arrow.-left>.shaft:before {

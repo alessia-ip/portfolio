@@ -3,6 +3,9 @@
 
 <head>
 
+  <title>Alessia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+
   <link href="CSS/dialogueStyleSheet.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +15,53 @@
 
 
   <script>
+
     function portfolioOn() {
-      console.log("portfolio");
-      document.getElementById("portfolio").style.visibility = "visible";
+      document.getElementById("portfolio").style.display = "block";
+      document.getElementById("writing").style.display = "none";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+
+      document.getElementById("portfolioBut").style.backgroundColor = "#CC74AC";
+      document.getElementById("writingBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("aboutBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("contactBut").style.backgroundColor = "#D8A7C6";
     }
 
     function writingOn() {
-      document.getElementById("portfolio").style.visibility = "hidden";
+      document.getElementById("portfolio").style.display = "none";
+      document.getElementById("writing").style.display = "block";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+
+      document.getElementById("portfolioBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("writingBut").style.backgroundColor = "#CC74AC";
+      document.getElementById("aboutBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("contactBut").style.backgroundColor = "#D8A7C6";
     }
 
     function aboutOn() {
-      document.getElementById("portfolio").style.visibility = "hidden";
+      document.getElementById("portfolio").style.display = "none";
+      document.getElementById("writing").style.display = "none";
+      document.getElementById("about").style.display = "block";
+      document.getElementById("contact").style.display = "none";
+
+      document.getElementById("portfolioBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("writingBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("aboutBut").style.backgroundColor = "#CC74AC";
+      document.getElementById("contactBut").style.backgroundColor = "#D8A7C6";
     }
 
-    function contaxtOn() {
-      document.getElementById("portfolio").style.visibility = "hidden";
+    function contactOn() {
+      document.getElementById("portfolio").style.display = "none";
+      document.getElementById("writing").style.display = "none";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("contact").style.display = "block";
+
+      document.getElementById("portfolioBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("writingBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("aboutBut").style.backgroundColor = "#D8A7C6";
+      document.getElementById("contactBut").style.backgroundColor = "#CC74AC";
     }
   </script>
 
@@ -62,12 +97,12 @@
         </div>
       </div>
       <br>
-      <br>
-      <!--Input Buttons-->
-      <div style="width:30vw; padding-left: 2vw; padding-right: 2vw">
 
-        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
-          <a class='animated-arrow' href="#" onclick="portfolioOn()">
+      <!--Input Buttons-->
+      <div style="width:30vw; padding-left: 2vw; padding-right: 2vw; color: black !important;">
+
+        <div class="bg-pink" id="portfolioBut" style="width:33vw; padding-left: 1vw; padding-right: 1vw;" onclick="portfolioOn()">
+          <a class='animated-arrow' href="#">
             <span class='the-arrow -left'>
               <span class='shaft'></span>
             </span>
@@ -79,8 +114,8 @@
           </a>
         </div>
         <br>
-        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
-          <a class='animated-arrow' href="#" onclick="writingOn()">
+        <div class="bg-pink" id="writingBut" style="width:33vw; padding-left: 1vw; padding-right: 1vw" onclick="writingOn()">
+          <a class='animated-arrow' href="#">
             <span class='the-arrow -left'>
               <span class='shaft'></span>
             </span>
@@ -92,7 +127,7 @@
           </a>
         </div>
         <br>
-        <div class="bg-pink " style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+        <div class="bg-pink " id="aboutBut" style="width:33vw; padding-left: 1vw; padding-right: 1vw" onclick="aboutOn()">
           <a class='animated-arrow' href='#'>
             <span class='the-arrow -left'>
               <span class='shaft'></span>
@@ -105,7 +140,7 @@
           </a>
         </div>
         <br>
-        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+        <div class="bg-pink" id="contactBut" style="width:33vw; padding-left: 1vw; padding-right: 1vw" onclick="contactOn()">
           <a class='animated-arrow' href='#'>
             <span class='the-arrow -left'>
               <span class='shaft'></span>
@@ -117,7 +152,19 @@
             </span>
           </a>
         </div>
-
+        <br>
+        <div class="bg-pink" style="width:33vw; padding-left: 1vw; padding-right: 1vw">
+          <a class='animated-arrow' href='https://alessiaip.itch.io/' target="_blank">
+            <span class='the-arrow -left'>
+              <span class='shaft'></span>
+            </span>
+            <span class='main'>
+              <span class='text'>
+                <p>5) "I just want to play your games!"</p>
+              </span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -128,10 +175,10 @@
 
 
       <!---PORTFOLIO PIECES--->
-      <div style="overflow: scroll; max-height: 100vh" id="portfolio">
+      <div style="overflow: scroll; max-height: 95vh;" id="portfolio">
 
         <!---Piece One--->
-        <div style="width:50vw; min-height:32vh ">
+        <div style="width:50vw; min-height:40vh ">
 
           <!--Title and Header-->
           <div style="display:block; float: left; width:50vw">
@@ -143,7 +190,7 @@
               </div>
               <div style="display:inline-block; margin-left:20px; width:45%; ">
                 <div style="display: inline-block; float:right;">
-                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Learn More</span>
                   <a href="https://fangs-and-friends.itch.io/fangs-and-friends" target="_blank">
                     <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
                   </a>
@@ -154,17 +201,18 @@
           </div>
 
           <!--Image-->
-          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/FangsAndFriends.png" style="max-height:100%;" />
+          <div style="height: 30vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/FangsAndFriends.png" style="max-height:100%;" />
           </div>
 
           <!--Content-->
           <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
             <p style="width:34vw">A co-op, environmental puzzle game. Two unlikely allies, a vampire, and a mage, must work together to escape their imprisonment.</p>
             <p style="width:34vw">
-              <i>Fangs and Friends</i> is a puzzle game focused on asynchronous gameplay in environmental manipulation. It won Best Overall Game, Disctinction in Game Art and the 2nd place People’s Choice Award at the <a
+              <i>Fangs and Friends</i> is a puzzle game focused on asynchronous gameplay in environmental manipulation. It won Best Overall Game, Distinction in Game Art and the 2nd place People’s Choice Award at the <a
                 href="https://www2.ocadu.ca/news/ocad-u-and-u-of-t-students-team-up-to-win-prizes-at-level-up-2019" class="inTextLinkHover" target="_blank">2019 Level Up Showcase.</a>
             </p>
             <p style="width:34vw"><i>My roles: Producer, Level Designer, Narrative Technical Designer</i></p>
+            <p style="width:34vw"><i>Made in collaboration with: Anisha Rohra, Erika Davis, Jacob Rosenberg, Martin Briand, Pablo Gonzalez, and Tonya-Leigh Escalante</i></p>
             </p>
           </div>
         </div>
@@ -175,7 +223,7 @@
         <br>
 
         <!---Piece Two--->
-        <div style="width:50vw; min-height:32vh ">
+        <div style="width:50vw; min-height:30vh ">
 
           <!--Title and Header-->
           <div style="display:block; float: left; width:50vw">
@@ -187,7 +235,7 @@
               </div>
               <div style="display:inline-block; margin-left:20px; width:45%; ">
                 <div style="display: inline-block; float:right;">
-                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Learn More</span>
                   <a href="https://alessiaip.itch.io/derelict-spire" target="_blank">
                     <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
                   </a>
@@ -198,7 +246,7 @@
           </div>
 
           <!--Image-->
-          <div style="height: 25vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/DerelictSpire.png" style="max-height:100%;" />
+          <div style="height: 20vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/DerelictSpire.png" style="max-height:150%; position:relative; top:-40px; left:-10px;" />
           </div>
 
           <!--Content-->
@@ -208,6 +256,7 @@
               This level was created as a vertical slice that demonstrated a grappling hook mechanic, and focused on environmental storytelling. The landscape is heavily inspired by the village of Tropea, Calabria, in Italy.
             </p>
             <p style="width:34vw"><i>My roles: Level Designer, Programmer</i></p>
+            <p style="width:34vw"><i>Made in collaboration with Beau McGhee, and Jude Pinto</i></p>
             </p>
           </div>
         </div>
@@ -230,7 +279,7 @@
               </div>
               <div style="display:inline-block; margin-left:20px; width:45%; ">
                 <div style="display: inline-block; float:right;">
-                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Learn More</span>
                   <a href="https://alessiaip.itch.io/eggsistential" target="_blank">
                     <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
                   </a>
@@ -246,11 +295,12 @@
 
           <!--Content-->
           <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
-            <p style="width:34vw">A soft-boiled, noir investigative game about an egg, some birds, and one big question.</p>
+            <p style="width:34vw">A soft-boiled, noir investigative game about an egg, some birds, and one big question. Which came first?</p>
             <p style="width:34vw">
-               <i>Eggsistential</i> is a short walking-sim that borrows from the noir visual aesthetic to set the tone for our protagonist as they explore their town.
+              <i>Eggsistential</i> is a short walking-sim that borrows from the noir visual aesthetic to set the tone for our protagonist as they explore their town.
             </p>
             <p style="width:34vw"><i>My roles: Programmer, Technical Narrative Designer, Level Design</i></p>
+            <p style="width:34vw"><i>Made in collaboration with Kaitlin McLain</i></p>
             </p>
           </div>
         </div>
@@ -273,7 +323,7 @@
               </div>
               <div style="display:inline-block; margin-left:20px; width:45%; ">
                 <div style="display: inline-block; float:right;">
-                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Learn More</span>
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Learn More</span>
                   <a href="https://alessiaip.itch.io/kindred-souls" target="_blank">
                     <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
                   </a>
@@ -289,11 +339,11 @@
 
           <!--Content-->
           <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
-            <p style="width:34vw">A short visual novel about distance relationships, and human connection. </p>
+            <p style="width:34vw">A short visual novel about long-distance relationships, and human connection. </p>
             <p style="width:34vw">
-              <i>Kindred Souls</i> is  
+              <i>Kindred Souls</i> explores themes of destiny, and the concept of soulmates in a low-stakes story. Spend an evening at home, and talk to a special someone in your life.
             </p>
-            <p style="width:34vw"><i>My roles: Programmer, Technical Narrative Designer, Level Design</i></p>
+            <p style="width:34vw"><i>This was a solo project.</i></p>
             </p>
           </div>
         </div>
@@ -305,25 +355,226 @@
 
       </div>
 
-      <!---WritingSamples--->
-      <div>
+      <!---Writing Samples--->
+      <div style="overflow: scroll; max-height: 95vh; display:none;" id="writing">
+
+        <!--Sample One-->
+        <div style="width:50vw; min-height:50vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  Snack or Treat
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Read More</span>
+                  <a href="https://alessiaip.itch.io/snack-or-treat" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
+          <!--Content-->
+          <div style="display:inline-block; float: left; width:98%">
+            <p><i>A text-based mystery game. It’s Halloween, and your roommates are the creatures that go bump in the night. And one of them is making trouble...</i></p>
+            </p>
+            <p>“The streets are lit, and the sound of laughter can be heard outside, faintly, down the roadway. A crisp October breeze signals the changing of the times, for tomorrow would herald the beginning of a chilly November. Most
+              trick-or-treaters know to avoid the dilapidated house at the end of the cul-de-sac This one - <i style="color:red;">or in this case, what remains of them</i> - clearly did not.”</p>
+            <p>“You find yourself in the narrow entryway of your humble abode, shut away from the rest of the world by only a wooden door to the south. To the north, the entryway opens up further into a hall. Dim lighting leaves the entrance just
+              barely visible in the moonlight from the window - there's no street lights close enough to the property to provide extra illumination.
+
+              Upon the kitschy, mud-stained welcome mat, obscuring the saccharine sweet welcome catchphrase, is a torn up costume, and a few fragments of <i style="color:red;">bone</i>.”</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Sample Two-->
+        <div style="width:50vw; min-height:50vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  Star Port
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px; display:none;">Read More</span>
+                  <a href="https://alessiaip.itch.io/star-port" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
+          <!--Content-->
+          <div style="display:inline-block; float: left; width:98%">
+            <p><i>A text-based detective game, where a slightly cynical employee of Port Corp. has a mystery to solve.</i></p>
+            </p>
+            <p>“The room is large enough that it shouldn't feel cramped, but cluttered enough to manage it anyways. Tables are pushed up against two of the walls - one of which is being used as a makeshift coffee station, and the other to hold
+              documents. To the south is the employee only entrance into the breakroom from the outside, next to which is the archaic punch-card station to clock in. To the west is a larger doorway, into docking bay CF-4.”</p>
+            <p>“The thin red lights of the landing strip glow on the floor, having replaced the original paint markers some years ago. Starliner-C ##22 occupies the middle of the space, perfectly centered between the lines. The boarding ramp is down.
+              To the east is the employee room, and to the west is a storage center, marked obviously with the word 'STORAGE' painted in large print across the door. Cameras stare down from the ceiling. There is a distinctly empty spot where the
+              Starliner's cargo should be for inspection - and isn't. Perhaps the cargo has already been packed away?"</p>
+          </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <!--Sample Three-->
+        <div style="width:50vw; min-height:85vh ">
+
+          <!--Title and Header-->
+          <div style="display:block; float: left; width:50vw">
+            <div style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E;  width:50vw">
+              <div style="display:inline-block; float: left; width:50%;">
+                <span style="font-size: 21px">
+                  in space no one can hear you bark
+                </span>
+              </div>
+              <div style="display:inline-block; margin-left:20px; width:45%; ">
+                <div style="display: inline-block; float:right;">
+                  <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Read More</span>
+                  <a href="https://alessiaip.itch.io/in-space-no-one-can-hear-you-bark" target="_blank">
+                    <span class="hover-button" style="margin:2px; padding:3px;padding-left:10px; padding-right:10px; border-radius: 2px;">Play it Here</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; width:98%">
+            <p><i>Act one of a dramatic space-opera written (almost) entirely as barks. Follow red squadron in their continued fight against the jellies!</i></p>
+            </p>
+            <p>It is a time of chaos. The REPUBLIC OF PLANETS loses ground by the lightyear to the reigning intergalactic terror of void-dwelling xeno-medusozoa, known as the JELLIES.</p>
+
+<p>With battles raging on through REPUBLIC-controlled space, civilians are caught in the crossfire and deadly weapons turn green planets to glass. Blood and ichor, shed in equal measure, fuel the engines of war. </p>
+
+<p>A small group of battle-hardened veterans and new recruits, including our heroes, RED SQUADRON, are hastily assembled to fight on the frontlines in the GAMMA CENTAURI system. With each passing nanosecond, they grow closer to the inevitable conflict ahead…
+</p>
+<p style="width:34vw"><i>My roles: Writer, Programmer</i></p>
+          </div>
+
+          <div style="height: 40vh; max-width:12vw; display:inline-block; float: left; margin-top:20px; border-radius: 3px; overflow:hidden;"><img src="images/covers/BarksInSpace.gif" style="max-height:100%;" />
+          </div>
+
+          <!--Content-->
+          <div style="display:inline-block; float: left; padding-left:20px; width:34vw">
+            <p style="width:34vw">
+              <table>
+                <tr>
+                  <td width="100px"><b>Crimson:</b></td>
+                  <td>Let's really throw 'em for a winger!</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Turkey:</b></td>
+                  <td>This fight is for the Republic! We do them proud!</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td style="text-align: right;">Everyone! Attack! <b>- Cinnibar</b></td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Cardinal:</b></td>
+                  <td>Fleas on the back of a titan.</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Carmine:</b></td>
+                  <td>For my family!</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Sanguine:</b></td>
+                  <td>I'll make sure you end up buried.</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Scarlet:</b></td>
+                  <td>Line up a clean shot and make it count.</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Tomato:</b></td>
+                  <td>CHARGE!</td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Tyrian:</b></td>
+                  <td>I won't make the same mistakes again.</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td style="text-align: right;">Oh shit--- <b>- Cinnibar</b></td>
+                </tr>
+                <tr>
+                  <td width="100px"><b>Crimson:</b></td>
+                  <td>They're repelling our assault!</td>
+                </tr>
+              </table>
+          </div>
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
       </div>
 
 
       <!---About Me--->
-      <div>
+      <div style="overflow: scroll; max-height: 95vh; display:none;" id="about">
+        <div style="border: 0px solid; border-color: #AFAFDC; border-radius: 10px; padding:10px; height: 25vw;">
 
 
 
+          <div style="display:inline-block; float:left; width: 15vw;">
+            <p style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E; font-size: 21px;">Profile Logs</p>
+            <p><b>Pronouns:</b><br>
+              She/her</p>
+            <p><b>Hobbies:</b><br>
+              Crochetting <br>
+              Playing the ukulele and piano<br>
+              Cooking (and baking!)</p>
+            <p><b>Currently playing:</b><br>
+              Star Wars: Squadrons<br>
+              Hades</p>
+          </div>
+          <div style="display:inline-block; float:left; width: 12vw; padding-right: 50px;">
+            <img src="images/Portrait.png" style="width:100%;" />
+          </div>
+        </div>
 
+        <p style="font-family: 'Averia Serif Libre', sans-serif; color:#B5446E; font-size: 21px;">Background</p>
+
+        <p>Alessia is a game designer and dev from Toronto, Canada. She’s got a passion for making digital games with a focus on narrative, and she’s always considering new ways to facilitate storytelling. Whether it be through a new mechanic, a
+          robust dialogue system, level design supporting the intrigue of a world, or a quirky user interface and experience, she thrives in combining design and technical skills to make interesting and memorable narrative games. </p>
+
+        <p>She’s a BDes. from OCAD University from their Digital Futures program, and she is currently studying Game Design at NYU as an MFA student. She’s always trying to learn and do new things.</p>
+
+        <p>She’s made an award winning game, called Fangs and Friends <a href="https://fangs-and-friends.itch.io/fangs-and-friends" target="_blank" class="inTextLinkHover">(which you can also play right here)!</a> She’s also worked at both Sago Mini, and at Dark Slope Studios (as a researcher through OCADU).</p>
       </div>
 
       <!---Contact--->
-      <div>
+      <div style="overflow: scroll; max-height: 95vh; display:none;" id="contact">
 
 
 
@@ -345,7 +596,9 @@
     </span>
   </a> -->
 
-
+<script>
+  document.getElementById("portfolioBut").style.backgroundColor = "#CC74AC";
+  </script>
 
 </body>
 
